@@ -1,0 +1,197 @@
+<resources>
+
+<!-- Content Description String   -->
+    <string name="app_name">Eazy Mile</string>
+    <string name="app_logo">App Logo</string>
+    <string name="location">Location</string>
+    <string name="home_area">University Area</string>
+    <string name="notify">Notifications</string>
+    <string name="img_home">Home Illustration</string>
+    <string name="infoIcon">Info Icon</string>
+    <string name="vehicleImg">Bike Image</string>
+    <string name="editIcon">Edit Ride</string>
+    <string name="name_home">Hi, Pookie 👋</string>
+    <string name="ride_start">Ride Start Date</string>
+    <string name="ride_end">Ride End Date</string>
+    <string name="area_search_icon">Search Icon</string>
+    <string name="area_go_icon">Go Icon</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="menuIcon">Icon Menu</string>
+    <string name="locationIcon">Chevron Icon</string>
+    <string name="closeIcon">Close</string>
+    <string name="desc_close">Close</string>
+    <string name="bookingIcon">Icon Booking</string>
+
+
+
+<!--Bottom Sheet Screens-->
+    <string name="calenderText">Select Your Day</string>
+    <string name="hourLabel">Select Duration</string>
+    <string name="btnHour"> Add Hours </string>
+    <string name="btnConfirm">Confirm</string>
+    <string name="modelBottom">| Destini 125</string>
+    <string name="vehicle_specs_title">Vehicle Specifications</string>
+    <!-- Table Labels -->
+    <string name="label_type">Type</string>
+    <string name="label_brand">Brand</string>
+    <string name="label_model">Model</string>
+    <string name="label_consumption">Range / Mileage</string>
+    <string name="label_power">Power</string>
+    <string name="label_battery">Battery Level</string>
+    <!-- Table Values (default/fallback) -->
+    <string name="value_type">Electric</string>
+    <string name="value_brand">Hero</string>
+    <string name="value_model">Destini</string>
+    <string name="value_consumption">40 kmpl</string>
+    <string name="value_power">9bhp 6000rpm</string>
+    <string name="value_cc">124.6 cc</string>
+
+
+
+<!--Splash Screen -->
+    <string name="tagline">Ride anytime , anywhere you want</string>
+    <string name="btn_start_text">Book your ride now</string>
+
+<!--LogIn Screen -->
+    <string name="sign_in">Log In</string>
+    <string name="welcome">Welcome Back User !</string>
+    <string name="welcome_message">Sign In - continue your journey with  us</string>
+    <string name="phone">Phone Number</string>
+    <string name="or_divider"> or SignIn with </string>
+    <string name="auth_google">  Continue with Google </string>
+    <string name="new_user">New here - Join now ? <font color='#22C55E'>Sign Up</font></string>
+    <string name="create_account">Create Account</string>
+
+
+<!--SignUp Screen-->
+    <string name="sign_up">Sign Up</string>
+    <string name="signup_screen">Let\'s Get Started</string>
+    <string name="signup_message">Register now — Explore the road with us</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="already_have_account">You are our community ?<font color='#22C55E'> Log In</font></string>
+    <!-- Gender -->
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <!-- Name Constraint-->
+    <string name="name_constraint">Enter your name as per Driving Licence/Aadhaar</string>
+    <!-- Check-Box-->
+    <string name="above_18">I am 18+ and I accept the <font color='#22C55E'>Terms &amp; Conditions
+    </font></string>
+
+
+
+<!--Otp - Authentication Screen    -->
+    <string name="auth_title">OTP Verification</string>
+    <string name="auth_message">We have sent  a 4 digit verification code to your mobile number %1$s</string>
+    <string name="btn_verify_otp">Verify OTP</string>
+    <string name="otp_info">If OTP is not received - check your email or tap </string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="btn_change_number">Change Mobile Number</string>
+    <!-- Timer string with placeholders -->
+    <string name="otp_timer">01:59</string>
+    <string name="otp_timer_format">%1$02d:%2$02d</string>
+    <string name="otp_timer_finished">00:00</string>
+    <string name="otp_time_end_message">Your chance ended, click Resend OTP</string>
+
+
+
+<!--Area Chooser Screen-->
+    <string name="search_text">Search for Your Area</string>
+    <string name="hint_select_area">Select Your Area</string>
+    <string name="popular_areas">Popular Areas</string>
+    <!--Sample Area-->
+    <string name="sample_area_name">Downtown District</string>
+    <string name="sample_area_details">5 EV cycles • 8 scooters • 2 bikes</string>
+    <string name="area_details">%1$d EV cycles • %2$d scooters • %3$d bikes</string>
+
+
+<!--Home Screen-->
+    <string name="tagline_home">Find your perfect ride</string>
+    <string name="card_search">Search your vehicle</string>
+    <string name="btn_search_vehicle">Search Vehicle</string>
+    <string name="fleet_title">Our Renting Fleet</string>
+    <string name="view_all">View all</string>
+    <string name="app_objective">Why Rent ?\nExperience hassle-free vehicle rentals with flexibility and savings at your fingertips.\nFrom Chaos To Comfort - EazyMile.</string>
+    <!--Recycler Item Home-->
+    <string name="price_banner">Price Banner</string>
+    <string name="price_tag">Starting at ₹189/day</string>
+    <string name="img_fleet">Bike Image</string>
+    <string name="brand">HERO</string>
+    <string name="model">Glamour</string>
+    <string name="btn_book_now">Book Now</string>
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="fleet">Fleet</string>
+    <string name="bookings">Bookings</string>
+    <string name="profile">Profile</string>
+
+
+<!--Fleet Nav Screen -->
+    <string name="chipAll">All Vehicles</string>
+    <string name="chipType1">Electric</string>
+    <string name="chipType2">Oil</string>
+    <string name="vehicleNumber">17 Vehicles Available</string>
+    <!-- Top Card View -->
+    <string name="startBox">Start Ride Date</string>
+    <string name="startDate">19–10-2025</string>
+    <string name="endBox">Ride Duration</string>
+    <string name="endDuration">6 hours</string>
+    <!-- Item Fleet -->
+    <string name="vehicle_name"><font color='#FDF31010'>Hero | </font>Destini 125</string>
+    <string name="vehicleCost">From ₹469 / Day</string>
+    <string name="hourlyPrice">Hourly - ₹14.5 / h</string>
+    <string name="feature1">Zero Deposit</string>
+    <string name="feature2">KM Packages</string>
+
+
+<!-- Bookings Nav Screen -->
+    <string name="my_bookings">My Bookings</string>
+    <string name="start_ride">Start Ride</string>
+    <string name="end_ride">End Ride</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="active">Active</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <!-- Item Bookings-->
+    <string name="bookingId">ID - #BK247891</string>
+    <string name="statusValue">Confirmed</string>
+    <string name="topline">Ride Details</string>
+    <string name="vehicleModel">Vehicle Model</string>
+    <string name="modelValue">Classic 350</string>
+    <string name="dateValue">5 Oct 2025</string>
+    <string name="durationValue">1h 34min</string>
+    <string name="costValue">₹ 878</string>
+    <string name="bookDate">Booking Date</string>
+    <string name="duration">Duration</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="status">Status</string>
+
+
+
+<!-- Profile Nav Screen -->
+    <string name="user_name">User Name</string>
+    <string name="userEmail">user@example.com</string>
+    <string name="gold_member">Gold Member</string>
+    <string name="riding_stats">Riding Stats</string>
+    <string name="total_rides">Total Rides</string>
+    <string name="rideData">0</string>
+    <string name="hour">Ride Hours</string>
+    <string name="hoursData">0 hours</string>
+    <string name="co2_saved">CO₂ Saved</string>
+    <string name="co2SavedData">0 kg</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="ride_history">Ride History</string>
+    <string name="notifications">Notifications</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="settings">Settings</string>
+    <string name="menuItems">Menu Item</string>
+    <!-- Authentication Out -->
+    <string name="sign_out">Sign Out</string>
+
+
+</resources>

@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+<!-- Base application theme -->
+    <style name="Theme.EazyMile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Allow content inside notch/cutout area -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <!-- Make the status bar transparent so background extends behind it -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Draw content behind the system bars -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Optional: white icons for dark backgrounds -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimaryFixed">@color/primary_green</item>
+        <item name="android:colorControlActivated">@color/primary_green</item>
+
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/black</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/accent_blue</item>
+    <item name="colorSecondaryVariant">@color/accent_blue_light</item>
+    <item name="colorOnSecondary">@color/white</item>
+    <!-- Background colors -->
+    <item name="android:windowBackground">@color/background_light</item>
+    <item name="colorSurface">@color/background_white</item>
+    <item name="colorOnSurface">@color/text_primary</item>
+    <!-- Text colors -->
+    <item name="android:textColorPrimary">@color/text_primary</item>
+    <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+<!--LogIn - SignUp Font Theme-->
+    <style name="LoginFontTheme">
+    <item name="android:fontFamily">@font/text_font</item>
+    </style>
+
+<!--OTP Box Style - Auth Screen    -->
+    <style name="OtpBoxStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+<!--Search Box Theme-->
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="queryBackground">@android:color/white</item>
+    </style>
+
+    <!--Nav Button Effects-->
+    <style name="CustomActiveIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">56dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:alpha">0.15</item>
+        <item name="shapeAppearanceOverlay">@style/RoundedIndicatorShape</item>
+    </style>
+    <style name="RoundedIndicatorShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">60%</item>
+    </style>
+
+<!-- Custom chip style with rounded corners -->
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">18dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="chipBackgroundColor">@color/nav_item_color</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

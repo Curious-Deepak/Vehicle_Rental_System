@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="253dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:visibility="visible"
+    android:theme="@style/LoginFontTheme"
+    android:backgroundTint="@color/background_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="253dp"
+        android:layout_height="match_parent">
+
+        <!-- Price Banner  -->
+        <FrameLayout
+            android:id="@+id/price_ribbon_container"
+            android:layout_width="190dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Banner Background -->
+            <ImageView
+                android:id="@+id/price_ribbon_bg"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/price_banner"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_price_banner" />
+
+            <!-- Price Text -->
+            <TextView
+                android:id="@+id/price_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingHorizontal="1dp"
+                android:text="@string/price_tag"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="Starting at ₹189/day" />
+        </FrameLayout>
+
+        <!-- Fleet Image -->
+        <ImageView
+            android:id="@+id/fleet_image"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:contentDescription="@string/img_fleet"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price_ribbon_container"
+            tools:src="@drawable/sample_bike" />
+
+        <!-- Brand -->
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/brand"
+            android:textColor="@color/teal_700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fleet_image"
+            tools:text="HERO" />
+
+        <!-- Model Name -->
+        <TextView
+            android:id="@+id/model_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/model"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/book_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/brand"
+            tools:text="Glamour" />
+
+        <!-- Book Now Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/book_button"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/btn_book_now"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            app:cornerRadius="22dp"
+            app:layout_constraintBottom_toBottomOf="@id/model_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/brand"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

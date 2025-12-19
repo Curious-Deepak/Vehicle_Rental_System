@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:theme="@style/LoginFontTheme">
+
+    <!-- Close Icon -->
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ic_cancel"
+        app:tint="@color/primary_green"
+        android:contentDescription="@string/desc_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Bottom Sheet Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/background_light"
+        app:layout_constraintTop_toBottomOf="@id/ivCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <!-- Bike Title -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brand"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/modelBottom"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Section Title -->
+                <TextView
+                    android:id="@+id/tvSpecsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_specs_title"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Table Layout with Complete Black Borders -->
+                <TableLayout
+                    android:id="@+id/specTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:stretchColumns="*"
+                    android:background="@android:color/black"
+                    android:padding="1dp">
+
+                    <!-- Row 1: Type -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- Type Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_type"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Type Value -->
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:padding="12dp"
+                            android:text="@string/value_type"
+                            android:textColor="@android:color/darker_gray" />
+                    </TableRow>
+
+                    <!-- Horizontal Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <!-- Row 2: Brand -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- Brand Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_brand"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Brand Value -->
+                        <TextView
+                            android:id="@+id/tvBrandValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:text="@string/value_brand"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@color/background_light" />
+                    </TableRow>
+
+                    <!-- Horizontal Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <!-- Row 3: Model -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- Model Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_model"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Model Value -->
+                        <TextView
+                            android:id="@+id/tvModelValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:text="@string/value_model"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@color/background_light" />
+                    </TableRow>
+
+                    <!-- Horizontal Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <!-- Row 4: Consumption -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- Consumption Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_consumption"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Consumption Value -->
+                        <TextView
+                            android:id="@+id/tvRange"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:text="@string/value_consumption"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@color/background_light" />
+                    </TableRow>
+
+                    <!-- Horizontal Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <!-- Row 5: Power -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- Power Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_power"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Power Value -->
+                        <TextView
+                            android:id="@+id/tvPower"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="14dp"
+                            android:text="@string/value_power"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@color/background_light" />
+                    </TableRow>
+
+                    <!-- Horizontal Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <!-- Row 6: CC -->
+                    <TableRow
+                        android:background="@android:color/black">
+
+                        <!-- CC Label -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background_light"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:text="@string/label_battery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Vertical Line -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- CC Value -->
+                        <TextView
+                            android:id="@+id/tvBatteryLevel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:text="@string/value_cc"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@color/background_light" />
+                    </TableRow>
+                </TableLayout>
+
+                <!-- Book Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBookNowBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_book_now"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    app:backgroundTint="@color/teal_700"
+                    app:cornerRadius="50dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

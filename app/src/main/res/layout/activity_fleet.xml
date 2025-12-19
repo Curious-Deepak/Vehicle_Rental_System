@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/LoginFontTheme">
+
+    <!-- Top AppBar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/accent_green"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Our Renting Fleet"
+        app:titleMarginTop="25dp"
+        android:textStyle="bold"
+        app:titleCentered="true"
+        app:titleTextColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="1dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Edit Icon -->
+            <ImageView
+                android:id="@+id/ivEditRide"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:tint="@color/off_black"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="@string/editIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" />
+
+            <!-- Start Date Box -->
+            <LinearLayout
+                android:id="@+id/startBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#F5F5F5"
+                android:background="@android:color/darker_gray"
+                android:clipToOutline="true"
+                app:layout_constraintTop_toBottomOf="@id/ivEditRide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/connectorLayout"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startBox"
+                    android:textColor="#555"
+                    android:textStyle="bold"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startDate"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Connector -->
+            <LinearLayout
+                android:id="@+id/connectorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/endBox"
+                app:layout_constraintStart_toEndOf="@id/startBox"
+                app:layout_constraintTop_toBottomOf="@+id/ivEditRide">
+
+                <!-- Left Green Square -->
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#4CAF50" />
+
+                <!-- Improved Dashed Line -->
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="3dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+                </LinearLayout>
+
+                <!-- Right Orange Diamond -->
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#FF9800"
+                    android:rotation="45" />
+            </LinearLayout>
+
+            <!-- End Date Box -->
+            <LinearLayout
+                android:id="@+id/endBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#F5F5F5"
+                android:background="@android:color/darker_gray"
+                android:clipToOutline="true"
+                app:layout_constraintTop_toTopOf="@id/startBox"
+                app:layout_constraintBottom_toBottomOf="@id/startBox"
+                app:layout_constraintStart_toEndOf="@id/connectorLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endBox"
+                    android:textColor="#555"
+                    android:textStyle="bold"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endDuration"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="9sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ChipGroup -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        app:circularflow_radiusInDP="12dp"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@+id/cardRide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chipAll"
+            style="@style/ChipStyle"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chipType1"
+            style="@style/ChipStyle"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipScooters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chipType2"
+            style="@style/ChipStyle"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Vehicle Available Text -->
+    <TextView
+        android:id="@+id/vehiclesAvailableText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vehicleNumber"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+        app:layout_constraintStart_toStartOf="@+id/chipGroup"/>
+
+    <!-- SwipeRefreshLayout with RecyclerView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/vehiclesAvailableText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVehicles"
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="62dp"
+            android:nestedScrollingEnabled="true"
+            tools:listitem="@layout/item_fleet"
+            android:layout_height="0dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@color/off_black"
+        android:elevation="10dp"
+        android:paddingHorizontal="8dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemRippleColor="@color/nav_ripple"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemActiveIndicatorStyle="@style/CustomActiveIndicatorStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

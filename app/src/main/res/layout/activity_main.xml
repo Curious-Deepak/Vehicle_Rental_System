@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<FrameLayout
+android:id="@+id/frame_container"
+android:layout_width="0dp"
+android:layout_height="0dp"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent">
+
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_img" />
+
+</FrameLayout>
+
+    <!-- App Logo at Top -->
+<ImageView
+android:id="@+id/app_logo"
+android:layout_width="wrap_content"
+android:layout_height="120dp"
+android:src="@drawable/app_logo"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="14dp"
+tools:ignore="ContentDescription" />
+
+<!-- Tagline above Button -->
+<TextView
+android:id="@+id/tagline"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:fontFamily="@font/splash_font"
+android:text="@string/tagline"
+android:textColor="@android:color/black"
+android:textSize="17sp"
+android:letterSpacing="0.02"
+app:layout_constraintBottom_toTopOf="@+id/btn_start"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginBottom="34dp" />
+
+
+<androidx.appcompat.widget.AppCompatButton
+android:id="@+id/btn_start"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:backgroundTint="@null"
+android:background="@drawable/rounded_button"
+android:fontFamily="@font/splash_font"
+android:text="@string/btn_start_text"
+android:textColor="@android:color/black"
+android:textSize="20sp"
+android:letterSpacing="0.01"
+android:gravity="center"
+android:textAllCaps="false"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginBottom="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
