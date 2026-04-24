@@ -89,18 +89,18 @@ Technologies used in the development of this project.
 <h2 align="center"> App Screen Preview </h2>
 
 <div style = "overflow-x: auto; white-space: nowrap;">
-  <img src="screens/Splash.jpeg" width ="250"/>
-  <img src="screens/LogIn.jpeg" width = "250"/>
-  <img src="screens/Auth.jpeg" width="250"/>
-  <img src="screens/SignUp.jpeg" width="250"/>
-  <img src="screens/Area%20Choose.jpeg" width="250"/>
-  <img src="screens/Home%201.jpeg" width="250"/>
-  <img src="screens/Home%202.jpeg" width="250"/>
-  <img src="screens/Home%20Bottom.jpeg" width="250"/>
-  <img src="screens/Fleet.jpeg" width="250"/>
-  <img src="screens/Fleet%20Bottom.jpeg" width="250"/>
-  <img src="screens/Booking.jpeg" width="250"/>
-  <img src="screens/Profile.jpeg" width="250"/>
+  <img src="screens/Splash.jpeg" width ="220"/>
+  <img src="screens/LogIn.jpeg" width = "220"/>
+  <img src="screens/Auth.jpeg" width="220"/>
+  <img src="screens/SignUp.jpeg" width="220"/>
+  <img src="screens/Area%20Choose.jpeg" width="220"/>
+  <img src="screens/Home%201.jpeg" width="220"/>
+  <img src="screens/Home%202.jpeg" width="220"/>
+  <img src="screens/Home%20Bottom.jpeg" width="220"/>
+  <img src="screens/Fleet.jpeg" width="220"/>
+  <img src="screens/Fleet%20Bottom.jpeg" width="220"/>
+  <img src="screens/Booking.jpeg" width="220"/>
+  <img src="screens/Profile.jpeg" width="220"/>
 </div>
 
 ---
