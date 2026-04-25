@@ -10,6 +10,7 @@ Eazy Mile is a real-time **Vehicle Rental Android Application** designed to simp
 - Fully cloud-powered (Firebase backend)
 
 ---
+
 ## Problem Solved
 
 This project aims to address the everyday challenges of daily commuting faced by students and working professionals.
@@ -27,6 +28,7 @@ This project aims to address the everyday challenges of daily commuting faced by
 👉 **Solution :** A fast, digital, and reliable vehicle booking cum rental system
 
 ---
+
 ##  Key Features
 
 - **Live Vehicle Availability**
@@ -42,7 +44,7 @@ This project aims to address the everyday challenges of daily commuting faced by
 
 ## App Flow
 
-  **Login -> OTP Auth -> Area Selection -> Home**
+ **Login -> OTP Auth -> Area Selection -> Home**
 
 Home Navigation  
 
@@ -89,18 +91,18 @@ Technologies used in the development of this project.
 <h2 align="center"> App Screen Preview </h2>
 
 <div style = "overflow-x: auto; white-space: nowrap;">
-  <img src="screens/Splash.jpeg" width ="230"/>
-  <img src="screens/LogIn.jpeg" width = "230"/>
-  <img src="screens/Auth.jpeg" width="230"/>
-  <img src="screens/SignUp.jpeg" width="230"/>
-  <img src="screens/Area%20Choose.jpeg" width="230"/>
-  <img src="screens/Home%201.jpeg" width="230"/>
-  <img src="screens/Home%202.jpeg" width="230"/>
-  <img src="screens/Home%20Bottom.jpeg" width="230"/>
-  <img src="screens/Fleet.jpeg" width="230"/>
-  <img src="screens/Fleet%20Bottom.jpeg" width="230"/>
-  <img src="screens/Booking.jpeg" width="230"/>
-  <img src="screens/Profile.jpeg" width="230"/>
+  <img src="screens/Splash.jpeg" width ="235"/>
+  <img src="screens/LogIn.jpeg" width = "235"/>
+  <img src="screens/Auth.jpeg" width="235"/>
+  <img src="screens/SignUp.jpeg" width="235"/>
+  <img src="screens/Area%20Choose.jpeg" width="235"/>
+  <img src="screens/Home%201.jpeg" width="235"/>
+  <img src="screens/Home%202.jpeg" width="235"/>
+  <img src="screens/Home%20Bottom.jpeg" width="235"/>
+  <img src="screens/Fleet.jpeg" width="235"/>
+  <img src="screens/Fleet%20Bottom.jpeg" width="235"/>
+  <img src="screens/Booking.jpeg" width="235"/>
+  <img src="screens/Profile.jpeg" width="235"/>
 </div>
 
 ---
@@ -111,7 +113,7 @@ Technologies used in the development of this project.
 
 Academic Project | Rental App Prototype  
 
-**Appication Developer | Android & Backend Developer**
+**Application Developer | Android & Backend Developer**
 
 --- 
 
