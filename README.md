@@ -117,6 +117,13 @@ Academic Project | Rental App Prototype
 
 --- 
 
+## App Icon 
+**Eazy Mile** App Icon Designed/Created Using Canva
+
+<img src="screens/AppIcon.png" width="150" height="150"/>
+
+--- 
+
 ## License
 
 This project is proprietary. Unauthorized copying, modification, or distribution is strictly prohibited.
